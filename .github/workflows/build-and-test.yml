@@ -1,14 +1,16 @@
 name: Build and Test
 
 on:
-  push:
-    branches:
-      - master
-      - development
-  pull_request:
-    branches:
-      - master
-      - development
+  # Automatic triggers disabled. Run manually with workflow_dispatch.
+  # push:
+  #   branches:
+  #     - master
+  #     - development
+  # pull_request:
+  #   branches:
+  #     - master
+  #     - development
+  workflow_dispatch:
 
 jobs:
   build-and-test:
